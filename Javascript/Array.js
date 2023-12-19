@@ -27,3 +27,12 @@ console.log(Array);
 //add element using length property
 Array[Array.length] = "zo";
 console.log(Array);
+
+//instanceof
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+const auto = new Car("Honda", "Accord", 1998);
+console.log(auto instanceof Car);
